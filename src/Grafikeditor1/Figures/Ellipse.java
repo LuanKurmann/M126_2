@@ -1,4 +1,4 @@
-package Grafikeditor1;
+package Grafikeditor1.Figures;
 
 public class Ellipse extends Figur{
     private int radiusX, radiusY;

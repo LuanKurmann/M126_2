@@ -1,4 +1,4 @@
-package Grafikeditor1;
+package Grafikeditor1.Figures;
 
 public abstract class Figur {
     protected int x, y, liniendicke;

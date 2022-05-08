@@ -1,4 +1,4 @@
-package Grafikeditor1;
+package Grafikeditor1.Figures;
 
 public class Rechteck extends Figur{
     private int laenge, breite;

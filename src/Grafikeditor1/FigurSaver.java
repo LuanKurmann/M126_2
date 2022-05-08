@@ -1,12 +1,13 @@
+/*
 package Grafikeditor1;
 
-import Grafikeditor1.*;
+import Grafikeditor1.Figurs.*;
 
 import java.io.*;
 import java.io.BufferedWriter;
 
 public class FigurSaver {
-    private String path = "C:\\Users\\luan\\OneDrive\\411\\src\\main\\java\\Ab2\\Grafikeditor\\save\\save.txt";
+    private String path = "C:\\Users\\luan\\OneDrive\\Gibb\\2Lehrjahr\\4Semester\\iet-226_2\\M126_2\\src\\Grafikeditor1\\save.txt";
     public void save(Figur figur, Class klasse) {
 
         try {
@@ -46,4 +47,4 @@ public class FigurSaver {
             e.printStackTrace();
         }
     }
-}
+}*/

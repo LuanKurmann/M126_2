@@ -1,5 +1,7 @@
 package Grafikeditor1;
 
+import Grafikeditor1.Figures.*;
+
 import javax.swing.*;
 import java.awt.*;
 import java.util.ArrayList;
@@ -34,7 +36,7 @@ public class Display extends JFrame {
     setVisible(true);
   }
 
-  private void createAndAddDrawingPanel() {
+  public void createAndAddDrawingPanel() {
     // Das JPanel-Objekt ist ein Objekt einer anonymen Unterklasse von JPanel
     // Siehe Java-Grundkurs Abschnitt 3.9
     add(new JPanel() {
@@ -52,25 +54,21 @@ public class Display extends JFrame {
    * Zeichnet alle Figuren.
    * @param g Referenz auf das Graphics-Objekt zum zeichnen.
    */
-  private void zeichneFiguren(Graphics2D g) {
+  public void zeichneFiguren(Graphics2D g) {
     for (Figur f : figuren) {
-      if (f instanceof Rechteck) {
-        Rechteck r = (Rechteck)f;
+      if (f instanceof Rechteck r) {
         g.drawRect(r.getX(), r.getY(), r.getBreite(), r.getLaenge());
         g.setStroke(new BasicStroke(r.getLiniendicke()));
       }
-      if (f instanceof Kreis) {
-        Kreis k = (Kreis)f;
+      if (f instanceof Kreis k) {
         g.drawOval(k.getX(), k.getY(), k.getRadius(), k.getRadius());
         g.setStroke(new BasicStroke(k.getLiniendicke()));
       }
-      if (f instanceof Linie) {
-        Linie l = (Linie)f;
+      if (f instanceof Linie l) {
         g.drawLine(l.getX(), l.getY(), l.getxEndPos(), l.getyEndPos());
         g.setStroke(new BasicStroke(l.getLiniendicke()));
       }
-      if (f instanceof Ellipse) {
-        Ellipse e = (Ellipse)f;
+      if (f instanceof Ellipse e) {
         g.drawOval(e.getX(), e.getY(), e.getRadiusX(), e.getRadiusY());
         g.setStroke(new BasicStroke(e.getLiniendicke()));
       }

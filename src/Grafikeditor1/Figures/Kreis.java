@@ -1,4 +1,4 @@
-package Grafikeditor1;
+package Grafikeditor1.Figures;
 
 public class Kreis extends Ellipse{
     private int radius;
