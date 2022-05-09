@@ -1,9 +1,6 @@
 package Grafikeditor1;
 
-import Grafikeditor1.Figures.Figur;
-import Grafikeditor1.Figures.Kreis;
-import Grafikeditor1.Figures.Linie;
-import Grafikeditor1.Figures.Rechteck;
+import Grafikeditor1.Figures.*;
 
 import java.awt.*;
 
@@ -38,6 +35,12 @@ final class EditorControl {
         break;
       case 'k':
         figur = new Kreis((int)ersterPunkt.getX(), (int)ersterPunkt.getY(), breite, liniendicke);
+        break;
+      case 's':
+        figur = new Schneemann((int)ersterPunkt.getX(), (int)ersterPunkt.getY(), breite / 2, liniendicke);
+        break;
+      case 'm':
+        figur = new Schild((int)ersterPunkt.getX(), (int)ersterPunkt.getY(), breite, laenge, liniendicke);
         break;
       default:
         figur = new Rechteck((int)ersterPunkt.getX(), (int)ersterPunkt.getY(), laenge, breite, liniendicke);
