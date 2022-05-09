@@ -37,7 +37,7 @@ final class EditorControl {
         figur = new Linie((int)ersterPunkt.getX(), (int)ersterPunkt.getY(), (int)zweiterPunkt.getX(), (int)zweiterPunkt.getY(), liniendicke);
         break;
       case 'k':
-        figur = new Kreis((int)ersterPunkt.getX() + (breite/2), (int)ersterPunkt.getY() + (laenge/2), breite/2, liniendicke);
+        figur = new Kreis((int)ersterPunkt.getX(), (int)ersterPunkt.getY(), breite, liniendicke);
         break;
       default:
         figur = new Rechteck((int)ersterPunkt.getX(), (int)ersterPunkt.getY(), laenge, breite, liniendicke);
