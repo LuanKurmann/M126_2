@@ -27,9 +27,9 @@ public class Main {
 
         ArrayList<Figur> figurList = new ArrayList<>();
         Schneemann schneemann = new Schneemann(100,100,50,1);
-        Kreis kreis = new Kreis(100,100,10,1);
+        Schild schild = new Schild(300,300, 100,50,1);
         figurList.add(schneemann);
-        figurList.add(kreis);
+        figurList.add(schild);
         //figurList.add(new Dreieck(300, 300, lila, true, 300, 150));
 
         Zeichnung zeichnung = new Zeichnung(figurList);
