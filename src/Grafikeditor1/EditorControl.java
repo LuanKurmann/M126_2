@@ -8,7 +8,7 @@ import Grafikeditor1.Figures.Rechteck;
 import java.awt.*;
 
 final class EditorControl {
-  private Display display = new Display();
+  private Zeichnung display = new Zeichnung();
   private char figurTyp;
   private Point ersterPunkt;
 
