@@ -1,5 +1,7 @@
 package Grafikeditor1.Figures;
 
+import java.awt.*;
+
 public class Ellipse extends Figur{
     private int radiusX, radiusY;
 
@@ -22,5 +24,10 @@ public class Ellipse extends Figur{
         liniendicke = (int)(liniendicke*faktor);
         radiusX = (int)(radiusX*faktor);
         radiusY = (int)(radiusY*faktor);
+    }
+
+    @Override
+    public void zeichne(Graphics2D g) {
+        g.drawOval(x,y,radiusX,radiusY);
     }
 }

@@ -1,5 +1,7 @@
 package Grafikeditor1.Figures;
 
+import java.awt.*;
+
 public abstract class Figur {
     protected int x, y, liniendicke;
 
@@ -35,4 +37,6 @@ public abstract class Figur {
     }
 
     public abstract void groesseAendern(float faktor);
+
+    public abstract void zeichne(Graphics2D g);
 }

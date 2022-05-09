@@ -1,5 +1,7 @@
 package Grafikeditor1.Figures;
 
+import java.awt.*;
+
 public class Linie extends Figur{
     private int xEndPos;
     private int yEndPos;
@@ -30,5 +32,10 @@ public class Linie extends Figur{
         liniendicke=(int)(liniendicke*faktor);
         xEndPos = (int)(xEndPos*faktor);
         yEndPos = (int)(yEndPos*faktor);
+    }
+
+    @Override
+    public void zeichne(Graphics2D g) {
+        g.drawLine(x,y,xEndPos,yEndPos);
     }
 }

@@ -18,6 +18,7 @@ import java.util.List;
 public class Display extends JFrame {
   /** Die Liste der dargestellten Figur-Objekte */
   private List<Figur> figuren = new ArrayList<Figur>();
+  private Zeichnung zeichnung;
 
   /**
    * Konstruktor. Initialisiert das Fenster in der Mitte des Bildschirms und erzeugt ein
@@ -55,30 +56,13 @@ public class Display extends JFrame {
    * @param g Referenz auf das Graphics-Objekt zum zeichnen.
    */
   public void zeichneFiguren(Graphics2D g) {
-    for (Figur f : figuren) {
-      if (f instanceof Rechteck r) {
-        g.drawRect(r.getX(), r.getY(), r.getBreite(), r.getLaenge());
-        g.setStroke(new BasicStroke(r.getLiniendicke()));
-      }
-      if (f instanceof Kreis k) {
-        g.drawOval(k.getX(), k.getY(), k.getRadius(), k.getRadius());
-        g.setStroke(new BasicStroke(k.getLiniendicke()));
-      }
-      if (f instanceof Linie l) {
-        g.drawLine(l.getX(), l.getY(), l.getxEndPos(), l.getyEndPos());
-        g.setStroke(new BasicStroke(l.getLiniendicke()));
-      }
-      if (f instanceof Ellipse e) {
-        g.drawOval(e.getX(), e.getY(), e.getRadiusX(), e.getRadiusY());
-        g.setStroke(new BasicStroke(e.getLiniendicke()));
-      }
-
-
-      /* TODO: Hier muss f�r jede weitere Figur-Klasse, welche dargestellt werden k�nnen muss,
-       * ein analoger Abschnitt, wie f�r die Rechteck-Klasse folgen.
-       */
-    }
+    zeichnung.zeichneFiguren(g);
   }
+
+  public void setZeichnung(Zeichnung zeichnung) {
+    this.zeichnung = zeichnung;
+  }
+
 
   /**
    * F�gt eine weitere Figur hinzu und l�st die Auffrischung des Fensterinhaltes aus.
