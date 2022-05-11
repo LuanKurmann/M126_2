@@ -28,7 +28,7 @@ final class EditorPanel extends JPanel {
     editorControl.allesNeuZeichnen(g);
   }
 
-  class EditorMouseAdapter extends MouseAdapter {
+  final private class EditorMouseAdapter extends MouseAdapter {
 
     @Override
     public void mousePressed(MouseEvent event) {
@@ -42,7 +42,7 @@ final class EditorPanel extends JPanel {
     }
   }
 
-  class EditorKeyAdapter extends KeyAdapter {
+  final private class EditorKeyAdapter extends KeyAdapter {
     @Override
     public void keyPressed(KeyEvent e) {
       super.keyPressed(e);
