@@ -42,6 +42,9 @@ final class EditorControl {
       case 'm':
         figur = new Schild((int)ersterPunkt.getX(), (int)ersterPunkt.getY(), breite, laenge, liniendicke);
         break;
+      case 'f':
+        figur = new SchneemannFamillie((int)ersterPunkt.getX(), (int)ersterPunkt.getY(), liniendicke, breite);
+        break;
       default:
         figur = new Rechteck((int)ersterPunkt.getX(), (int)ersterPunkt.getY(), laenge, breite, liniendicke);
         break;

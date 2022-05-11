@@ -28,8 +28,10 @@ public class Main {
         ArrayList<Figur> figurList = new ArrayList<>();
         Schneemann schneemann = new Schneemann(100,100,50,1);
         Schild schild = new Schild(300,300, 100,50,1);
+        SchneemannFamillie schneemannFamillie = new SchneemannFamillie(200,200,1,300);
         figurList.add(schneemann);
         figurList.add(schild);
+        figurList.add(schneemannFamillie);
         //figurList.add(new Dreieck(300, 300, lila, true, 300, 150));
 
         Zeichnung zeichnung = new Zeichnung(figurList);
