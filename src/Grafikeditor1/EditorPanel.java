@@ -14,7 +14,13 @@ final class EditorPanel extends JPanel {
 
   EditorPanel(EditorControl control) {
     addMouseListener(new EditorMouseAdapter());
-    addKeyListener(new EditorKeyAdapter());
+    addKeyListener(new KeyAdapter() {
+      @Override
+      public void keyPressed(KeyEvent e) {
+        super.keyPressed(e);
+        editorControl.setFigurTyp(e.getKeyChar());
+      }
+    });
     setFocusable(true);
     requestFocusInWindow();
     editorControl = control;
@@ -39,14 +45,6 @@ final class EditorPanel extends JPanel {
     public void mouseReleased(MouseEvent event) {
       editorControl.erzeugeFigurMitZweitemPunkt(event.getPoint());
       repaint();
-    }
-  }
-
-  final private class EditorKeyAdapter extends KeyAdapter {
-    @Override
-    public void keyPressed(KeyEvent e) {
-      super.keyPressed(e);
-      editorControl.setFigurTyp(e.getKeyChar());
     }
   }
 }

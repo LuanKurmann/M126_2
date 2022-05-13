@@ -14,8 +14,6 @@ public class SchneemannFamillie extends Figur {
         teilFiguren.add(new Schneemann(x,y,groesse/3,liniendicke));
         teilFiguren.add(new Schneemann(x + (groesse/3),y,groesse/3,liniendicke));
         teilFiguren.add(new Schneemann(x+(groesse/3*2),y,groesse/3,liniendicke));
-
-
     }
 
     @Override
