@@ -1,3 +1,4 @@
+/*
 package Grafikeditor1;
 
 import Grafikeditor1.Figures.*;
@@ -13,17 +14,17 @@ import java.util.List;
  * Siehe auch Java-Grundkurs Abschnitt 10.2 und 10.3.
  * 
  * @author Andres Scheidegger
- */
+ *
 @SuppressWarnings("serial")
 public class Display extends JFrame {
-  /** Die Liste der dargestellten Figur-Objekte */
+  /** Die Liste der dargestellten Figur-Objekte *
   private List<Figur> figuren = new ArrayList<Figur>();
   private Zeichnung zeichnung;
 
   /**
    * Konstruktor. Initialisiert das Fenster in der Mitte des Bildschirms und erzeugt ein
    * JFrame-Objekt, auf welchem die Figuren gezeichnet werden.
-   */
+   *
   public Display() {
     Dimension windowSize = new Dimension(800, 600);
     setSize(windowSize);
@@ -54,7 +55,7 @@ public class Display extends JFrame {
   /**
    * Zeichnet alle Figuren.
    * @param g Referenz auf das Graphics-Objekt zum zeichnen.
-   */
+   *
   public void zeichneFiguren(Graphics2D g) {
     zeichnung.zeichneFiguren(g);
   }
@@ -67,7 +68,7 @@ public class Display extends JFrame {
   /**
    * F�gt eine weitere Figur hinzu und l�st die Auffrischung des Fensterinhaltes aus.
    * @param figur Referenz auf das weitere Figur-Objekt.
-   */
+   *
   public void hinzufuegen(Figur figur) {
     figuren.add(figur);
     repaint();
@@ -75,9 +76,10 @@ public class Display extends JFrame {
 
   /**
    * L�scht alle Figuren und l�st die Auffrischung des Fensterinhaltes aus.
-   */
+   *
   public void allesLoeschen() {
     figuren.clear();
     repaint();
   }
 }
+*/

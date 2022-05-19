@@ -6,7 +6,7 @@ import java.io.FileNotFoundException;
 import java.util.ArrayList;
 
 public class Main {
-    public static final Display display = new Display();
+    //public static final Display display = new Display();
     //private static final FigurSaver saver = new FigurSaver();
     //private static final FigurLoader loader = new FigurLoader();
 
@@ -36,9 +36,9 @@ public class Main {
 
         Zeichnung zeichnung = new Zeichnung(figurList);
 
-        display.setZeichnung(zeichnung);
+        //display.setZeichnung(zeichnung);
 
-        display.repaint();
+        //display.repaint();
         //Geht nicht
         //Rechteck rechteck1 = new Figur(10,20,30);
         /*

@@ -52,15 +52,26 @@ final class EditorControl {
 
 
 
-    figur = switch (figurTyp) {
-      case 'l' -> new Linie((int) ersterPunkt.getX(), (int) ersterPunkt.getY(), (int) zweiterPunkt.getX(), (int) zweiterPunkt.getY(), liniendicke);
-      case 'k' -> new Kreis(x - radius, y - radius, durchmesser, liniendicke);
-      case 'e' -> new Ellipse(x, y, breite, laenge, liniendicke);
-      case 's' -> new Schneemann(x, y, breite / 2, liniendicke);
-      case 'm' -> new Schild(x, y, breite, laenge, liniendicke);
-      case 'f' -> new SchneemannFamillie(x, y, liniendicke, breite);
-      default -> new Rechteck(x, y, laenge, breite, liniendicke);
-    };
+    switch (figurTyp) {
+      case 'l':
+        figur = new Linie((int)ersterPunkt.getX(),(int)ersterPunkt.getY(), (int)zweiterPunkt.getX(), (int)zweiterPunkt.getY(), liniendicke);
+        break;
+      case 'k':
+        figur = new Kreis(x - radius, y - radius, durchmesser, liniendicke);
+        break;
+      case 's':
+        figur = new Schneemann(x, y, breite / 2, liniendicke);
+        break;
+      case 'm':
+        figur = new Schild(x, y, breite, laenge, liniendicke);
+        break;
+      case 'f':
+        figur = new SchneemannFamillie(x, y, liniendicke, breite);
+        break;
+      default:
+        figur = new Rechteck(x, y, laenge, breite, liniendicke);
+        break;
+    }
     display.hinzufuegen(figur);
   }
 }
