@@ -14,7 +14,6 @@ public class Main {
         FigurFileDAO dao = new FigurFileDAO();
         FigurParser fp = new FigurParser(dao);
         List<Figur> figuren = fp.parse();
-        System.out.println(figuren.toString());
         ArrayList<Figur> figurList = new ArrayList<>();
 
         figurList.addAll(figuren);

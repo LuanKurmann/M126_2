@@ -19,7 +19,7 @@ import java.util.List;
 public class Display extends JFrame {
   /** Die Liste der dargestellten Figur-Objekte */
   private List<Figur> figuren = new ArrayList<Figur>();
-  private Zeichnung zeichnung;
+  private Zeichnung zeichnung = new Zeichnung();
 
   /**
    * Konstruktor. Initialisiert das Fenster in der Mitte des Bildschirms und erzeugt ein

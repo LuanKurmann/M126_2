@@ -36,6 +36,7 @@ public abstract class Figur {
         this.y = deltaY;
     }
 
+
     public abstract void groesseAendern(float faktor);
 
     public abstract void zeichne(Graphics2D g);

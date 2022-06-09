@@ -26,8 +26,6 @@ final class EditorPanel extends JPanel {
     editorControl = control;
   }
 
-  // Die paintComponent()-Methode wird automatisch aufgerufen, wenn irgendwer die repaint()-
-  // Methode beim EditorFrame oder beim EditorPanel aufruft.
   @Override
   protected void paintComponent(Graphics g) {
     super.paintComponent(g);
