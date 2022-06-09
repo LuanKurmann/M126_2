@@ -8,27 +8,21 @@ import java.util.List;
 
 public class Main {
     public static final Display display = new Display();
-    //private static final FigurSaver saver = new FigurSaver();
-    //private static final FigurLoader loader = new FigurLoader();
 
-
-    public static void main(String[] args) throws FileNotFoundException {
+    public static void main(String[] args) {
 
         FigurFileDAO dao = new FigurFileDAO();
         FigurParser fp = new FigurParser(dao);
         List<Figur> figuren = fp.parse();
+        System.out.println(figuren.toString());
         ArrayList<Figur> figurList = new ArrayList<>();
 
-        for (Figur f:figuren) {
-            figurList.add(f);
-        }
+        figurList.addAll(figuren);
         Zeichnung zeichnung = new Zeichnung(figurList);
 
         display.setZeichnung(zeichnung);
 
         display.repaint();
         dao.close();
-
-
     }
 }

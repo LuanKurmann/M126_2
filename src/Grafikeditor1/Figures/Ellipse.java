@@ -30,4 +30,9 @@ public class Ellipse extends Figur{
     public void zeichne(Graphics2D g) {
         g.drawOval(x,y,radiusX,radiusY);
     }
+
+    @Override
+    public String toString() {
+        return ("Kreis: Radius-X: " + radiusX + " Radius-Y: " + radiusY);
+    }
 }

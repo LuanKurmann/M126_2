@@ -40,7 +40,10 @@ public class SchneemannFamillie extends Figur {
         return teilFiguren;
     }
 
-
+    @Override
+    public String toString() {
+        return ("breite: " + breite);
+    }
 }
 
 

@@ -11,4 +11,6 @@ public class Kreis extends Ellipse{
     public int getRadius() {
         return radius;
     }
+
+
 }

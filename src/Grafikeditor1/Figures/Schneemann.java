@@ -38,7 +38,10 @@ public class Schneemann extends Figur {
     public ArrayList<Figur> getTeilFiguren() {
         return teilFiguren;
     }
-
+    @Override
+    public String toString() {
+        return ("breite: " + breite);
+    }
 
 }
 

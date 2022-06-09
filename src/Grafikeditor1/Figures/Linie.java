@@ -38,4 +38,9 @@ public class Linie extends Figur{
     public void zeichne(Graphics2D g) {
         g.drawLine(x,y,xEndPos,yEndPos);
     }
+
+    @Override
+    public String toString() {
+        return ("yEndPos: " + yEndPos + "xEndPos: " + xEndPos);
+    }
 }

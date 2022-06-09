@@ -33,4 +33,9 @@ public class Rechteck extends Figur{
         g.drawRect(x, y, breite, laenge);
     }
 
+    @Override
+    public String toString() {
+        return ("laenge: " + laenge + "breite: " + breite);
+    }
+
 }

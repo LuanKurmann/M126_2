@@ -25,8 +25,9 @@ public class FigurParserTest {
         assertEquals(100, figuren.get(0).getX());
         assertEquals(100, figuren.get(0).getY());
         assertEquals(1, figuren.get(0).getLiniendicke());
-        assertEquals(200, figuren.get(1).getX());
-        assertEquals(200, figuren.get(1).getY());
+
+        assertEquals(figuren.get(0).toString(),"Kreis: Radius-X: 100 Radius-Y: 100");
+        assertEquals(figuren.get(1).toString(),"Kreis: Radius-X: 200 Radius-Y: 200");
 
     }
 }

@@ -40,4 +40,9 @@ public class Schild extends Figur{
     public ArrayList<Figur> getTeilFiguren() {
         return teilFiguren;
     }
+
+    @Override
+    public String toString() {
+        return ("laenge: " + laenge + "breite: " + breite);
+    }
 }
