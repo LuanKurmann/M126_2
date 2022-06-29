@@ -4,7 +4,6 @@ import java.awt.*;
 
 public abstract class Figur {
     protected int x, y, liniendicke;
-
     public Figur(int xPos, int yPos, int liniendicke) {
         this.x = xPos;
         this.y = yPos;
@@ -39,7 +38,7 @@ public abstract class Figur {
 
     public abstract void groesseAendern(float faktor);
 
-    public abstract void zeichne(Graphics2D g);
+    public abstract void zeichne(Graphics g);
 
     public abstract String toString();
 }

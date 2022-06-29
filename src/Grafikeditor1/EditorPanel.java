@@ -25,13 +25,11 @@ final class EditorPanel extends JPanel {
     requestFocusInWindow();
     editorControl = control;
   }
-
   @Override
   protected void paintComponent(Graphics g) {
     super.paintComponent(g);
     editorControl.allesNeuZeichnen(g);
   }
-
   final private class EditorMouseAdapter extends MouseAdapter {
 
     @Override

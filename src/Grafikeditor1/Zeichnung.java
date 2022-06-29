@@ -19,7 +19,7 @@ public class Zeichnung {
      * Zeichnet alle Figuren.
      * @param g Referenz auf das Graphics-Objekt zum zeichnen.
      */
-    public void zeichneFiguren(Graphics2D g) {
+    public void zeichneFiguren(Graphics g) {
         for (Figur f : figuren) {
             f.zeichne(g);
         }

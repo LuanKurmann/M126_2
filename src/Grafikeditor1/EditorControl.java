@@ -10,7 +10,7 @@ final class EditorControl {
   private Point ersterPunkt;
 
   public void allesNeuZeichnen(Graphics g) {
-    display.zeichneFiguren((Graphics2D) g);
+    display.zeichneFiguren((Graphics) g);
   }
 
   public void setFigurTyp(char figurTyp) {

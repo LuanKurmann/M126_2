@@ -4,7 +4,6 @@ import java.awt.*;
 
 public class Rechteck extends Figur{
     private int laenge, breite;
-
     public Rechteck(int xPos, int yPos, int laenge, int breite, int liniendicke) {
         super(xPos, yPos, liniendicke);
         this.laenge = laenge;
@@ -29,13 +28,13 @@ public class Rechteck extends Figur{
     }
 
     @Override
-    public void zeichne(Graphics2D g) {
+    public void zeichne(Graphics g) {
         g.drawRect(x, y, breite, laenge);
     }
 
     @Override
     public String toString() {
-        return ("laenge: " + laenge + "breite: " + breite);
+        return ("Rechteck: laenge: " + laenge + " breite: " + breite);
     }
 
 }

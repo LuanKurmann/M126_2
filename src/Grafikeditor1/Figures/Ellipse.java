@@ -27,7 +27,7 @@ public class Ellipse extends Figur{
     }
 
     @Override
-    public void zeichne(Graphics2D g) {
+    public void zeichne(Graphics g) {
         g.drawOval(x,y,radiusX,radiusY);
     }
 

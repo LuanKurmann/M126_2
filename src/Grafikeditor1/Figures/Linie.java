@@ -35,12 +35,12 @@ public class Linie extends Figur{
     }
 
     @Override
-    public void zeichne(Graphics2D g) {
+    public void zeichne(Graphics g) {
         g.drawLine(x,y,xEndPos,yEndPos);
     }
 
     @Override
     public String toString() {
-        return ("yEndPos: " + yEndPos + "xEndPos: " + xEndPos);
+        return ("Linie: yEndPos: " + yEndPos + " xEndPos: " + xEndPos);
     }
 }

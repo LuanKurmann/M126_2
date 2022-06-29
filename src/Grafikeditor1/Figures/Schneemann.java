@@ -29,7 +29,7 @@ public class Schneemann extends Figur {
     }
 
     @Override
-    public void zeichne(Graphics2D g) {
+    public void zeichne(Graphics g) {
         for (Figur f: teilFiguren){
             f.zeichne(g);
         }

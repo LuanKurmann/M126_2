@@ -47,7 +47,7 @@ public class Display extends JFrame {
       @Override
       protected void paintComponent(Graphics g) {
         super.paintComponent(g);
-        zeichneFiguren((Graphics2D) g);
+        zeichneFiguren((Graphics) g);
       }
     });
   }
@@ -56,7 +56,7 @@ public class Display extends JFrame {
    * Zeichnet alle Figuren.
    * @param g Referenz auf das Graphics-Objekt zum zeichnen.
    */
-  public void zeichneFiguren(Graphics2D g) {
+  public void zeichneFiguren(Graphics g) {
     zeichnung.zeichneFiguren(g);
   }
 
